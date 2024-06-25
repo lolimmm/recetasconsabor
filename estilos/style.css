@@ -1,0 +1,137 @@
+*{
+	margin:0;
+	padding:0;
+	/*box-sizing: border-box;*/
+}
+
+
+body {
+    /*background-color: #D5BA80;*/
+    background-color: #f9f5ec;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+
+    /*font-size: 1.5em;*/
+    grid-template-columns: 1.8fr 1fr; /*Dos columnas*/
+    grid-template-rows: repeat(4, auto); /*Tres filas*/
+    grid-template-areas: 
+                        "header    header"
+                        "nav       nav"
+                        "main      main"
+                        "footer    footer";
+
+}
+
+
+/*Cabecera*/
+header {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    
+    grid-area: header; /*Posicionamos el header*/
+
+    background-color: #ece0c6;
+    height: 7rem;
+    margin-top: 1rem;
+
+    display: flex; /*Se utiliza FLEX para posicionar el contenido del header*/
+    justify-content: center; /*Distribuye el espacio entre los elementos horizontalmente*/
+    align-items: center; /*Alinea verticalmente*/
+}
+
+/*Contenido principal*/
+main {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    grid-area: main;   
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    grid-area: footer;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/*Menú, se accede a las diferentes zonas de contenido*/
+nav {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    grid-area: nav;
+}
+
+.menu ul {
+   /*Igualamos a cero tanto el margen como el padding y eliminamos los marcadores predeterminados*/ 
+   margin: 0px;
+   padding: 0px;
+   list-style-type: none;
+   /*Establecemos el ancho de la barra de navegación*/
+   width: max-content;
+   /*Centramos el elemento ul*/
+   margin: auto;
+
+   display: flex;
+}
+
+.menu ul li{
+    /*Para que la lista se muestre en horizontal hacemos que los elementos de la lista floten a la izquierda*/
+    /*float: left; */ /* Opto mejor por aplicar display:flex en la caja del ul */ 
+    
+     /*Establecemos el color de fondo*/ 
+    background-color: #f2ead9;
+}
+
+.menu ul a{
+    /*Hacemos que los elementos ancla de la lista se comporten como botones*/
+    display: block;
+    padding: 0 0.5rem; /*Relleno a la derecha e izquierda de las anclas*/
+    line-height: 2.1em; /*Centrar verticalmente el texto*/
+    text-decoration: none; /*Desactivar el subrayado*/
+    color: #392d13;
+    font-weight: bold;
+    border-left: #CCCCCC solid thin; /*Añadimos un espacio entre los enlaces de la barra de navegación*/
+    padding-bottom: 1rem;
+    padding-TOP: 1rem;
+}
+
+/*Cambiar el color del elemento ancla cuando se coloque el puntero*/
+.menu ul a:hover {
+    color: white;
+}
+
+h1 {
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5em;*/
+
+    font-family: 'Aclonica', sans-serif;
+	font-size:3rem;
+    color:  #392d13;
+
+    /*letter-spacing: 0.6em; Separación de las letras del texto*/
+    text-shadow: 0.2em 0.2em 0.15em rgba(0,0,0,0.5); /*Añadimos una sombra*/ 
+}
+
+h2 {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+}
+
+
+
+    
+

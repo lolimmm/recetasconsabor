@@ -1,0 +1,153 @@
+*{
+	margin:0;
+	padding:0;
+	/*box-sizing: border-box;*/
+}
+
+body {
+    background-color: #f9f5ec;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+
+    /*font-size: 1.5em;*/
+}
+
+header {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    background-color: #ece0c6;
+    border-radius: 2rem;
+
+    display: flex; /*Se utiliza FLEX para posicionar el contenido del header*/
+    justify-content: space-around; /*Distribuye el espacio entre los elementos horizontalmente*/
+    align-items: center; /*Alinea verticalmente*/
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    background-color: #f2ead9;
+    border-radius: 2rem;
+    border: solid thin #7F786A;
+
+    display: flex; /*Se utiliza FLEX para posicionar el contenido del header*/
+    flex-direction: column;
+
+    align-content: center;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+}
+
+.volver {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.pasos {
+    width: 88%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+    background-color: #f9f5ec;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+img {
+    width: 30%;
+    height: 30%;
+    
+    box-shadow: 0.1em 0.2em 1em 0.2em black;
+    /*display: block;
+    margin: auto;*/
+    
+    margin: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+h1 {
+    color:  #392d13;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+h2 {
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+ul, ol {
+    margin-left: 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+li {
+    padding-bottom: 1rem;
+}
+
+p {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+div a {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border: solid thin #f9f5ec;
+    color: #f9f5ec;
+    text-decoration: none;
+    background-color: #7F786A;
+}
+
+div a:hover {
+    color: black;
+    border: solid;
+}
+
+
+/* Media Queries */
+
+/* @media (min-width: 80%) */
+/*@media (max-width: 760px) {
+    .contenedor {
+        
+    }
+
+    .pasos {
+        
+        
+      }
+
+      header {
+        
+        background-color: red;
+      }
+}*/
+
+
+
