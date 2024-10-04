@@ -1,0 +1,35 @@
+/*-----------------------------------------------------*/
+/*----Contenido Principal de las páginas de recetas----*/
+/*-----------------------------------------------------*/
+
+main ul, main ol {
+    margin-left: 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+main li {
+    padding-bottom: 1rem;
+}
+
+main {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pasos {
+    width: 43%;
+    justify-content: flex-start;
+}
+
+.pasos img {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+
+
+
+

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Skranji:wght@400;700&display=swap');
+
+/*-----------------------------------------------------*/
+/*----Contenido en común del index y demás páginas ----*/
+/*-----------------------------------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+	/*box-sizing: border-box;*/
+}
+
+body {
+    background-color: #f9f5ec;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+
+    /*font-size: 1.5em;*/
+}
+
+header {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    background-color: #ece0c6;
+    border-radius: 2rem;
+
+    display: flex; /*Se utiliza FLEX para posicionar el contenido del header*/
+    justify-content: space-around; /*Distribuye el espacio entre los elementos horizontalmente*/
+    /*align-items: center;*/ /*Alinea verticalmente*/
+    /*text-align: center;*/
+}
+
+/* Imagen de la cabecera */
+header img {
+    width: 90%;   
+    
+    box-shadow: 0.1em 0.2em 1em 0.2em black;
+    /*display: block;
+    margin: auto;*/
+    
+    margin: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    /*opacity: 0.4;*/
+    /* Difuminamos la imagen */
+    filter: blur(3px) brightness(90%) contrast(76%);
+    
+}
+
+header img:hover {
+    filter: blur(0px) brightness(100%) contrast(100%);
+}
+
+/* Bloque que contiene el menú de navegación y el logo */
+.menu-logo{
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+
+    display: flex;
+}
+
+/* Botón logo */
+.logo {
+    width: 90%;
+    margin: auto;
+    
+    display: flex;
+}
+
+.logo img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h1, .contenedor h2 {
+    font-family: "Skranji", system-ui, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:  #392d13;
+    
+    padding: 0.5rem;
+}
+
+/*Menú Navegación, se accede a las diferentes zonas de contenido*/
+nav {
+    width: 90%;
+    padding: 0.5rem;
+    align-self: center;
+}
+
+.menu ul {
+    /*Igualamos a cero tanto el margen como el padding y eliminamos los marcadores predeterminados*/ 
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    
+    /*Establecemos el ancho de la barra de navegación*/
+    width: max-content;
+
+    /*Centramos el elemento ul*/
+    margin: auto;
+ 
+    display: flex;
+ }
+
+ .menu ul li{
+    /*Para que la lista se muestre en horizontal hacemos que los elementos de la lista floten a la izquierda*/
+    /*float: left; */ /* Opto mejor por aplicar display:flex en la caja del ul */ 
+    
+     /*Establecemos el color de fondo*/ 
+    background-color: #f2ead9;
+    color: #7F786A;
+}
+
+/*Cambiar el color del elemento ancla cuando se coloque el puntero*/
+.menu ul a:hover {
+    border: solid thin #f9f5ec;
+    color: #f9f5ec;
+    background-color: #7F786A;
+}
+
+.menu ul a{
+    /*Hacemos que los elementos ancla de la lista se comporten como botones*/
+    display: block;
+    padding: 0 0.5rem; /*Relleno a la derecha e izquierda de las anclas*/
+    line-height: 2.1em; /*Centrar verticalmente el texto*/
+    text-decoration: none; /*Desactivar el subrayado*/
+    color: #392d13;
+    font-weight: bold;
+    border-left: #CCCCCC solid thin; /*Añadimos un espacio entre los enlaces de la barra de navegación*/
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+/*---------------*/
+/*----Submenú----*/
+/*---------------*/
+.menu li ul {
+    display: none; /*Ocultamos el submenú*/
+    position: absolute; /*Para que el menú principal no se vea afectado*/
+}
+
+/*Al pasar sobre el botón del menú, aparece el submenú*/
+.menu li:hover ul{
+    display: block;
+}
+.menu li ul li{
+    width: 10em; /*Todos los elementos del submenú tienen el mismo tamaño*/
+    float: none; /*Alineamos en vertical haciendo que ya no floten*/
+    border-top: #CCCCCC solid thin;
+}
+
+.menu li ul a {
+    padding-bottom: 0.5rem; /* Reducimos el padding */
+    padding-top: 0.5rem;
+}
+
+/*-----------------------------*/
+/*----Contenido princicipal----*/
+/*-----------------------------*/
+main {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    background-color: #f2ead9;
+    border-radius: 2rem;
+    border: solid thin #7F786A;
+
+    display: flex; /*Se utiliza FLEX para posicionar el contenido del header*/
+    flex-direction: column;
+
+    align-content: center;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+}
+
+
+
+.pasos, .recetas {
+    width: 88%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+    background-color: #f9f5ec;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+h2, h3 {
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+.contenedor h2 {
+    text-align: center;
+}
+
+p {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+/*-------------------------------------*/
+/*----Contenido Principal del index----*/
+/*-------------------------------------*/
+.enlaces{
+    padding: 1rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.enlaces div {
+    border-right: solid thin #7F786A;
+    border-left: solid thin #7F786A;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+   
+    margin: 0.5rem;
+    width: 160px;
+}
+
+
+
+
+
+
+
+/*---------------------*/
+/*----Media Queries----*/
+/*---------------------*/
+
+/* @media (min-width: 80%) */
+/*@media (max-width: 760px) {
+    .contenedor {
+        
+    }
+
+    .pasos {
+        
+        
+      }
+
+      header {
+        
+        background-color: red;
+      }
+}*/
+
+
+

@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
-    <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Recetas de Loli</h1>
+    <!-- Cabecera -->
+    <header>    
+        <img src="./images/vegetales.jpg">
     </header>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="./misRecetas/enblanco.html">En blanco</a></li>
-            <li><a href="./misRecetas/sopa_caldo_encima.html">Sopa de Caldo "poncima"</a></li>
-        </ul>
-    </nav>  
-    
-    <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, maxime, facere excepturi cum labore alias consequuntur cumque necessitatibus quae, corrupti distinctio numquam porro cupiditate! Commodi omnis quia officiis in quasi!</p>
+    <!-- Bloque que contiene el menú de navegación y el logo con su título -->
+    <div class="menu-logo">
+        <!-- Logo y Título -->
+        <div class="logo"><a href="../index.html"><img src="./images/chef-hat.png" alt="" width="60px" height="60px"></a><h1>RECETAS LOLA</h1></div>
+
+        <!-- Menú de navegación -->
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="#recetas">Mis Recetas</a></li>
+
+                <li><a href="#">Menú 2</a>
+                    <!-- Submenú -->
+                    <ul>
+                        <li><a href="#">Ítem 1</a></li>
+                        <li><a href="#">Ítem 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+     
+    <!-- Contenedor principal -->
+    <main class="contenedor">
+        <a name="recetas"></a>
+        <div class="recetas">
+            <h2>Mis Recetas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil, corrupti consectetur quidem quo quis cupiditate? Saepe, fuga atque perspiciatis error sunt adipisci. Corrupti, explicabo? Quibusdam temporibus vitae modi quasi.</p>
+            
+            <!-- Enlaces con imágenes a las distintas recetas -->
+             <div class="enlaces">
+                <div>
+                    <a href="./misRecetas/emblanco.html#pasos"><img src="./images/emblanco.jpg" alt="sopa de caldo por encima" width="100px" height="100px" ></a>
+                    <p>En blanco</p>
+                </div>
+
+                <div>
+                    <a href="./misRecetas/sopa_caldo_encima.html#pasos"><img src="./images/sopa_caldo_encima.jpg" alt="sopa de caldo por encima" width="100px" height="100px" ></a>
+                    <p>Sopa de caldo "poncima"</p>
+                </div>            
+             </div>
+            
+        </div>
     </main>
 
     <footer>
-        <a href="">Lorem</a>
+        <a href=""></a>
     </footer>
-        
+    
 </body>
 </html>

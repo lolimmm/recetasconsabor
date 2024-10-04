@@ -3,44 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sopa de Caldo por encima</title>
-    <link rel="stylesheet" href="../estilos/style_recetas.css">
+    <title>Sopa de caldo por encima</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/misRecetas.css">
 </head>
 
 <body>
-    <header>
-        <h1>Sopa de Caldo "poncima"</h1>
-        <img src="../images/sopa_caldo_encima.jpg" alt="Imagen de Sopa de Caldo por encima" height="300" width="300">
+    <!-- Cabecera -->
+    <header>    
+        <img src="../images/vegetales.jpg">
     </header>
 
-    <div class="volver"><a href="../index.html">VOLVER</a></div>
+    <!-- Bloque que contiene el menú de navegación y el logo con su título -->
+    <div class="menu-logo">
+        <!-- Logo y Título -->
+        <div class="logo"><a href="../index.html"><img src="../images/chef-hat.png" alt="" width="60px" height="60px"></a><h1>RECETAS LOLA</h1></div>
 
+        <!-- Menú de navegación -->
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../index.html#recetas">Mis Recetas</a></li>
+
+                <li><a href="#">Menú 2</a>
+                    <!-- Submenú -->
+                    <ul>
+                        <li><a href="#">Ítem 1</a></li>
+                        <li><a href="#">Ítem 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+     
+    <!-- Contenedor principal -->
     <main class="contenedor">
+        <a name="pasos"></a>
         <div class="pasos">
-            <h2>Descripción</h2>
-            <p>Describir...</p>
+            <div>
+                <h2>Sopa de caldo "poncima"</h2>
+                <img src="../images/sopa_caldo_encima.jpg" alt="sopa caldo por encima" width="65%">
+                <h3>Descripción</h3>
+                <p>Es un plato tradicional de la provincia de Málaga que tiene distintas variantes y reciben distintos nombres según el pueblo donde se haga.
+                    Como por ejemplo la sopa perota de Álora o la 'aplastá' en Pizarra.
+                </p>
+                <p>La sopa de caldo 'poncima' se trata de una sopa de tomate, pimientos, patata y pan, típica de Coín.</p>
+            </div>
+        </div>
 
-            <h2>Ingredientes</h2>
+        <div class="pasos">
+            <h3>Ingredientes</h3>
             <ul>
                 <li>Media cebolla</li>
                 <li>Unos 3 pimientos</li>
                 <li>Dos tomates</li>
-                <li>Pimiento molido</li>
+                <li>Pimiento molido (1 cucharadita)</li>
                 <li>Hierbabuena</li>
                 <li>Aceite</li>
                 <li>Unas 3 ó 4 patatas</li>
                 <li>2l. Agua</li>
                 <li>Sal</li>
                 <li>Pan bueno del día anterior</li>
+                <li>Sardinas o boquerones sin espina y fritos (opcional)</li>
             </ul>
-            
-            <h2>Pasos</h2>
+
+            <h3>Pasos</h3>
             <ol>
-                <li>En una cacerola se pone a hervir el agua con las patatas, cortadas en rodajas finas, y un poco de sal. Cuando estén cocidas reservar.</li>
+                <li>En una cacerola se pone a hervir el agua con las patatas, cortadas en rodajas finas, y un poco de sal. Cuando estén cocidas reservar todo.</li>
                 <li>Mientras tanto troceamos la cebolla, pimiento, tomate y en una cacerola lo añadimos junto al aceite para hacer el frito.</li>
                 <li>Una vez tengamos el frito hecho, le añadimos el pimiento molido y dejamos sobre un minuto a fuego suave.</li>
-                <li>Añadir el frito a la cacerola junto a las patatas y el agua, dejar hervir un poco y retirar del fuego.</li>
+                <li>Añadir el frito a la cacerola junto a las patatas y el agua, dejar hervir un poco para que se mezclen los sabores y retirar del fuego.</li>
                 <li>Por último añadimos la mezcla de la cacerola a la fuente donde previamente tenemos preparada con el pan cortado en finas rodajas.</li>
+                <li>Se le pueden añadir sardinas o boquerones sin espina y fritos del día anterior.</li>
                 <li>Le ponemos hierbabuena y lo dejamos un poco reposar.</li>
                 <li>Si quedase caldo con frito se puede guardar para el día siguiente, sólo habría que cocer las patatas y cortar el pan.</li>
                 <li>Se acompaña con pepino, melón, uvas…</li>
@@ -49,14 +83,8 @@
     </main>
 
     <footer>
-        <a href="">Lorem</a>
+        <a href=""></a>
     </footer>
+    
 </body>
 </html>
-
-
-
-
-
-
-
