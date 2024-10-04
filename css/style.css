@@ -63,19 +63,16 @@ header img:hover {
     margin-top: 1rem;
 
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* Botón logo */
 .logo {
-    width: 90%;
-    margin: auto;
-    
+    width: max-content;
     display: flex;
-}
-
-.logo img {
-    margin-top: auto;
-    margin-bottom: auto;
+    align-items: center;
 }
 
 h1, .contenedor h2 {
@@ -89,7 +86,7 @@ h1, .contenedor h2 {
 
 /*Menú Navegación, se accede a las diferentes zonas de contenido*/
 nav {
-    width: 90%;
+    width: max-content;
     padding: 0.5rem;
     align-self: center;
 }
