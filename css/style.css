@@ -89,6 +89,7 @@ nav {
     width: max-content;
     padding: 0.5rem;
     align-self: center;
+    display: flex;
 }
 
 .menu ul {
@@ -134,6 +135,17 @@ nav {
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
+
+/* Buscador */
+.menu input {
+    height: 2.1em;
+    margin: auto 0.6em;
+    padding-left: 0.4em;
+ }
+
+ .menu img {
+    margin: auto;
+ }
 
 /*---------------*/
 /*----Submenú----*/

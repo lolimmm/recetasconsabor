@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,23 +22,31 @@
         <!-- Menú de navegación -->
         <nav class="menu">
             <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="#recetas">Mis Recetas</a></li>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="#recetas">Recetas</a></li>
 
-                <li><a href="#">Menú 2</a>
+                <li><a href="#">Contacto</a>
                     <!-- Submenú -->
                     <ul>
                         <li><a href="#">Ítem 1</a></li>
                         <li><a href="#">Ítem 2</a></li>
                     </ul>
-                </li>
+                </li> 
             </ul>
+
+            <!-- Buscador -->
+            <!-- Añadimos a la imagen el evento para cuando se haga 'click' se ejecute la función getVal() -->
+            <input type="text" list="recetas" id="receta" name="receta" placeholder="Buscar"><img src="./images/lupa.png" alt="" width="20px" height="20px" id="buscar" onclick="getVal()">
+            <datalist id="recetas">
+                <option data-val="./misRecetas/emblanco.html#pasos" value="En blanco"></option>
+                <option data-val="./misRecetas/sopa_caldo_encima.html#pasos" value="Sopa de caldo por encima"></option>
+            </datalist>
         </nav>
+        <a name="recetas"></a>
     </div>
      
     <!-- Contenedor principal -->
     <main class="contenedor">
-        <a name="recetas"></a>
         <div class="recetas">
             <h2>Mis Recetas</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil, corrupti consectetur quidem quo quis cupiditate? Saepe, fuga atque perspiciatis error sunt adipisci. Corrupti, explicabo? Quibusdam temporibus vitae modi quasi.</p>
@@ -62,5 +71,7 @@
         <a href=""></a>
     </footer>
     
+    <!-- JavaScript -->
+    <script src="js/myScript.js"></script>
 </body>
 </html>

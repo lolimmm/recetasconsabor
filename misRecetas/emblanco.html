@@ -6,6 +6,7 @@
     <title>En blanco</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/misRecetas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,10 +23,10 @@
         <!-- Menú de navegación -->
         <nav class="menu">
             <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../index.html#recetas">Mis Recetas</a></li>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../index.html#recetas">Recetas</a></li>
 
-                <li><a href="#">Menú 2</a>
+                <li><a href="#">Contacto</a>
                     <!-- Submenú -->
                     <ul>
                         <li><a href="#">Ítem 1</a></li>
@@ -33,12 +34,20 @@
                     </ul>
                 </li>
             </ul>
+
+            <!-- Buscador -->
+            <!-- Añadimos a la imagen el evento para cuando se haga 'click' se ejecute la función getVal() -->
+            <input type="text" list="recetas" id="receta" name="receta" placeholder="Buscar"><img src="../images/lupa.png" alt="" width="20px" height="20px" id="buscar" onclick="getVal()">
+            <datalist id="recetas">
+                <option data-val="./emblanco.html#pasos" value="En blanco"></option>
+                <option data-val="./sopa_caldo_encima.html#pasos" value="Sopa de caldo por encima"></option>
+            </datalist>
         </nav>
+        <a name="pasos"></a>
     </div>
-     
+
     <!-- Contenedor principal -->
     <main class="contenedor">
-        <a name="pasos"></a>
         <div class="pasos">
             <div>
                 <h2>En blanco</h2>
@@ -83,5 +92,7 @@
         <a href=""></a>
     </footer>
     
+    <!-- JavaScript -->
+    <script src="../js/myScript.js"></script>
 </body>
 </html>
