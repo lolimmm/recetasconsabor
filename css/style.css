@@ -88,8 +88,12 @@ h1, .contenedor h2 {
 nav {
     width: max-content;
     padding: 0.5rem;
-    align-self: center;
+    /*align-self: center;*/
+    
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .menu ul {
@@ -136,15 +140,21 @@ nav {
     padding-top: 1rem;
 }
 
-/* Buscador */
+/*----------------*/
+/*----Buscador----*/
+/*----------------*/
 .menu input {
     height: 2.1em;
     margin: auto 0.6em;
-    padding-left: 0.4em;
+    /*padding-left: 0.4em;*/
  }
 
- .menu img {
-    margin: auto;
+ .menu div {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
  }
 
 /*---------------*/
