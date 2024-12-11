@@ -17,7 +17,7 @@ function getVal() {
     let datalist = document.getElementById("recetas"); // Obtenemos el datalist
     //console.log(input.getAttributeNames());
     let op_seleccionada = datalist.querySelector(`[value="${input.value}"]`); // Obtenemos la opción seleccionada buscando en el 'datalist' el valor que se ha ingresado en el 'input', con 'querySelector'
-    
+
     let seleccion = op_seleccionada.getAttribute('data-val'); // Obtenemos  el atributo 'data-*' de la opción seleccionada, con getAttribute()
     let seleccion_con_dataset = op_seleccionada.dataset.val;  // O lo obtenemos con 'dataset'
     console.log(seleccion);
