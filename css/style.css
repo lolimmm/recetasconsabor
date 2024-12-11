@@ -130,14 +130,12 @@ nav {
 .menu ul a{
     /*Hacemos que los elementos ancla de la lista se comporten como botones*/
     display: block;
-    padding: 0 0.5rem; /*Relleno a la derecha e izquierda de las anclas*/
+    padding: 0.5rem 0.5rem; /*Relleno a la derecha e izquierda de las anclas*/
     line-height: 2.1em; /*Centrar verticalmente el texto*/
     text-decoration: none; /*Desactivar el subrayado*/
     color: #392d13;
     font-weight: bold;
     border-left: #CCCCCC solid thin; /*Añadimos un espacio entre los enlaces de la barra de navegación*/
-    padding-bottom: 1rem;
-    padding-top: 1rem;
 }
 
 /*----------------*/
