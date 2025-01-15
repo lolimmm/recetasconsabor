@@ -228,8 +228,12 @@ main {
 
     display: flex; /*Se utiliza FLEX para posicionar el contenido del header*/
     flex-direction: column;
-
     align-content: center;
+}
+
+main .recetas img {
+    /*box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /* Sombra */
 }
 
 footer {
