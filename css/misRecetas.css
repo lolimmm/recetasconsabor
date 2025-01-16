@@ -25,9 +25,10 @@ main {
 
 .pasos img {
     display: block;
-    margin: auto;
-    padding: 1rem;
+    margin: 1rem auto;
+    /*padding: 1rem;*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
 }
 
 
