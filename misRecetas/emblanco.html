@@ -11,45 +11,16 @@
 
 <body>
     <!-- Cabecera -->
-    <header>    
-        <img src="../images/vegetales.jpg">
-    </header>
-
-    <!-- Bloque que contiene el menú de navegación y el logo con su título -->
-    <div class="menu-logo">
-        <!-- Logo y Título -->
-        <div class="logo"><a href="../index.html"><img src="../images/chef-hat.png" alt="" width="60px" height="60px"></a><h1>RECETAS CON SABOR</h1></div>
-
-        <!-- Menú de navegación -->
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../index.html#recetas">Recetas</a></li>
-
-                <li><a href="#">Contacto</a>
-                    <!-- Submenú -->
-                    <ul>
-                        <li><a href="#">Ítem 1</a></li>
-                        <li><a href="#">Ítem 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <!-- Buscador -->
-            <!-- Añadimos a la imagen el evento para cuando se haga 'click' se ejecute la función getVal() -->
-            <div class="search-container">
-                <i class="search-icon"><img src="../images/lupa.png" alt="" width="20px" height="20px" id="buscar" onclick="getVal()"></i>
-                <input class="search-input" type="text" list="recetas" id="receta" name="receta" placeholder="Buscar...">
-            </div>
-            <datalist id="recetas">
-                <option data-val="./emblanco.html#pasos" value="En blanco"></option>
-                <option data-val="./sopa_caldo_encima.html#pasos" value="Sopa de caldo por encima"></option>
-                <option data-val="./pure-verduras.html#pasos" value="Puré de verduras"></option>
-                <option data-val="./magro-tomates.html#pasos" value="Magro con tomates"></option>
-            </datalist>
-        </nav>
-        <a name="pasos"></a>
-    </div>
+    <header id="header"></header>
+    <script>
+        // Incluimos el header dinámicamente
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error al cargar el header: ", error))
+    </script>
 
     <!-- Contenedor principal -->
     <main class="contenedor">

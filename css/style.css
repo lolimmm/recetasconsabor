@@ -20,7 +20,7 @@ body {
     /*font-size: 1.5em;*/
 }
 
-header {
+header #banner {
     width: 90%;
     margin: auto;
     margin-top: 1rem;
@@ -37,7 +37,7 @@ header {
 }
 
 /* Imagen de la cabecera */
-header img {
+header #banner img {
     width: 100%;   
     
     box-shadow: 0.1em 0.2em 1em 0.2em black;
@@ -52,7 +52,7 @@ header img {
     
 }
 
-header img:hover {
+header #banner img:hover {
     /* Difuminamos la imagen */
     /*filter: blur(0px) brightness(100%) contrast(100%);*/
     filter: blur(3px) brightness(90%) contrast(76%);
