@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazpachuelo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/misRecetas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header id="header"></header>
+    <script>
+        // Incluimos el header dinámicamente
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error al cargar el header: ", error))
+    </script>
+ 
+    <!-- Contenedor principal -->
+    <main class="contenedor">
+        <!-- Gazpachuelo (con pescado) -->
+        <div class="pasos">
+            <div>
+                <h2>Gazpachuelo (con pescado)</h2>
+                <img src="../images/gazpachuelo1.jpg" alt="Gazpachuelo" width="65%">
+                <h3>Descripción</h3>
+                <p>El gazpachuelo es una de las recetas más tradicionales de Málaga. Existen muchas versiones, todas con un magnífico sabor, suavidad y cremosidad.</p>
+                <p>El gazpachuelo malagueño tiene su origen entre los pescadores de la región. Elaboraban un caldo de pescado al que agregaban patata y daban sabor incorporando mayonesa.</p>
+                <p>Se le añade clara de huevo, pescado blanco, almejas, gambas... manteniendo el color blanco que tanto la caracteriza.</p>
+                
+            </div>
+        </div>
+
+        <div class="pasos">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>1 k. aprox. de patatas</li>
+                <li>1,6 l. aprox. de agua + 200 ml. (para diluir la mayonesa)</li>
+                <li>Aceite de oliva</li>
+                <li>2 huevos</li>
+                <li>Limón</li>
+                <li>Sal</li>
+                <li>Una rosada (700gr - 1k ) cortada en trozos</li>
+                <li>Gambas</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ol>
+                <li>En una cacerola ponemos el agua a hervir junto a las patatas cortadas en rodajas. Lo dejamos hirviendo a fuego medio hasta que las patatas estén cocidas.</li>
+                <li>Mientras tanto separamos las claras de las yemas.</li>
+                <ul>
+                    <li>Reservamos las claras.</li>
+                    <li>Con las yemas hacemos la mayonesa (a mano, batidora, thermomix…). Una vez tengamos la mayonesa, cogemos los 200 ml. de agua fría y poco a poco la vamos añadiendo a la mayonesa, 
+                        mezclando de forma suave hasta conseguir que la mayonesa esté diluida. Reservamos.</li>
+                </ul>
+                <li>Una vez las patatas estén cocidas (10-12 minutos), añadimos la rosada, las gambas y la sal. Le dejamos que dé un hervor y comprobamos que la rosada se haya cocido.</li>
+                <li>A continuación añadimos las claras de huevo,  tapamos, retiramos del fuego y reservamos (con el calor de la olla se van cociendo las claras).</li>
+                <li>Esperamos unos minutos que haya reducido el calor de la cacerola.</li>
+                <li>Después añadimos la mayonesa diluida, esto hay que hacerlo poco a poco y sin mover para evitar que la mahonesa se corte.  
+                    Dejamos sin mover hasta que pase un rato o se vaya a servir (cuidado que al añadir la mayonesa se puede cortar).</li>
+                
+            </ol>
+        </div>
+
+        <!-- Gazpachuelo (sin pescado) -->
+        <div class="pasos">
+            <div>
+                <h2>Gazpachuelo (sin pescado)</h2>
+                <img src="../images/gazpachuelo2.jpg" alt="Gazpachuelo" width="65%">
+                <h3>Descripción</h3>
+                <p>El gazpachuelo es una de las recetas más tradicionales de Málaga. Existen muchas versiones, todas con un magnífico sabor, suavidad y cremosidad.</p>
+                <p>El gazpachuelo malagueño tiene su origen entre los pescadores de la región. Elaboraban un caldo de pescado al que agregaban patata y daban sabor incorporando mayonesa.</p>
+                <p>Se le añade clara de huevo, pescado blanco, almejas, gambas... manteniendo el color blanco que tanto la caracteriza.</p>
+                
+            </div>
+        </div>
+
+        <div class="pasos">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>1 k. aprox. de patatas</li>
+                <li>1,6 l. aprox. de agua + 200 ml. (para diluir la mayonesa)</li>
+                <li>Aceite de oliva</li>
+                <li>2 huevos</li>
+                <li>Limón</li>
+                <li>Sal</li>
+                <li>(Opcional) Pan del día anterior (cortado en trozos)</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ol>
+                <li>En una cacerola ponemos el agua a hervir junto a las patatas cortadas en rodajas. Lo dejamos hirviendo a fuego medio hasta que las patatas estén cocidas.</li>
+                <li>Mientras tanto separamos las claras de las yemas.</li>
+                <ul>
+                    <li>Reservamos las claras.</li>
+                    <li>Con las yemas hacemos la mayonesa (a mano, batidora, thermomix…). Una vez tengamos la mayonesa, cogemos los 200 ml. de agua fría y poco a poco la vamos añadiendo a la mayonesa, 
+                        mezclando de forma suave hasta conseguir que la mayonesa esté diluida. Reservamos.</li>
+                </ul>
+                <li>Una vez las patatas estén cocidas (10-12 minutos), añadimos las claras de huevo, después añadimos el pan y tapamos, retiramos del fuego y reservamos (con el calor de la olla se van cociendo las claras).</li>
+                <li>Esperamos unos minutos que haya reducido el calor de la cacerola.</li>
+                <li>Después añadimos la mayonesa diluida, esto hay que hacerlo poco a poco y sin mover para evitar que la mahonesa se corte.  
+                    Dejamos sin mover hasta que pase un rato o se vaya a servir (cuidado que al añadir la mayonesa se puede cortar).</li>
+                
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <a href=""></a>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../js/myScript.js"></script>
+</body>
+</html>
