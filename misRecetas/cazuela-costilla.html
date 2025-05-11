@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cazuela de patatas (con costilla)</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/misRecetas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header id="header"></header>
+    <script>
+        // Incluimos el header dinámicamente
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error al cargar el header: ", error))
+    </script>
+
+    <a name="pasos"></a>
+ 
+    <!-- Contenedor principal -->
+    <main class="contenedor">
+        <div class="pasos">
+            <div>
+                <h2>Cazuela de patatas (con costilla)</h2>
+                <img src="../images/defecto.png" alt="sopa caldo por encima" width="65%">
+                <h3>Descripción</h3>
+                <p>Esta cazuela de patatas con costilla de cerdo es un plato completo y reconfortante, ideal para disfrutar en familia.</p>
+                <p>Aporta proteínas de alta calidad gracias a la carne, carbohidratos complejos de las patatas y un buen equilibrio de vitaminas y minerales procedentes de las verduras como la zanahoria, el tomate y el pimiento.</p>
+                <p>Rica en vitamina A, C, B6, hierro y potasio, es una receta sabrosa que también ayuda a mantener la energía y el sistema inmunológico en forma.</p>
+            </div>
+        </div>
+
+        <div class="pasos">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Costilla (½ kilo aprox.)</li>
+                <li>1 tomate</li>
+                <li>1 pimiento</li>
+                <li>1 cebolla</li>
+                <li>1 ó 2 dientes de ajo</li>
+                <li>Patatas (1 kilo aprox.)</li>
+                <li>Zanahorias 2 ó 3</li>
+                <li>Laurel</li>
+                <li>Pimiento molido (para el sofrito), una cucharadita</li>
+                <li>Azafrán</li>
+                <li>Pimienta molida</li>
+                <li>Sal</li>
+                <li>Aceite (muy poco)</li>
+                <li>Vino 200 ml</li>
+                <li>agua (1,8 l. aprox.)</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ol>
+                <li>Se morea la carne en la olla, y se reserva en otro recipiente.</li>
+                <li>En la misma olla ponemos un poco de aceite y se hace el sofrito (tomate, pimiento, cebolla,
+                    ajo), se deja unos 10 minutos a fuego medio. Después, un poco antes de apartarlo y a fuego
+                    más bajo, se le añade el pimiento molido (sobre 1 minuto).<br>
+                    Si tiene mucho aceite, se le quita un poco ya que la costilla contiene mucha grasa<br>
+                    Se tritura el sofrito por la batidora.
+                </li>
+                <li>Continuamos poniendo en la olla la carne y el sofrito ya triturado, se añade el laurel y las
+                    zanahorias cortadas en trozos, después agregamos el vino y se deja que hierva unos
+                    segundos.
+                </li>
+                <li>Seguidamente se le añade el agua y dejamos el tiempo necesario para que la costilla se
+                    cocine, dependiendo si se usa olla express o convencional:
+                </li>
+                    <ul>
+                        <li> En la olla express lo dejamos hirviendo unos 25 minutos.</li>
+                        <li>En la olla convencional lo dejamos el tiempo necesario hasta que la costilla esté tierna.</li>
+                    </ul>
+                <li>Por último añadimos las patatas cortadas en trozos (chascadas), la pimienta molida y el
+                    azafrán, lo dejamos hirviendo a fuego medio hasta que las patatas estén tiernas (una media
+                    hora según sean las patatas).
+                </li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <a href=""></a>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../js/myScript.js"></script>
+</body>
+</html>

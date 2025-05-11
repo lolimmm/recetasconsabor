@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cazuela de patatas (con pollo)</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/misRecetas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header id="header"></header>
+    <script>
+        // Incluimos el header dinámicamente
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error al cargar el header: ", error))
+    </script>
+
+    <a name="pasos"></a>
+ 
+    <!-- Contenedor principal -->
+    <main class="contenedor">
+        <div class="pasos">
+            <div>
+                <h2>Cazuela de patatas (con pollo)</h2>
+                <img src="../images/defecto.png" alt="sopa caldo por encima" width="65%">
+                <h3>Descripción</h3>
+                <p>Esta cazuela de patatas con pollo es un plato completo, sabroso y nutritivo.</p>
+                <p>El pollo aporta proteínas magras de alta calidad, mientras que las patatas y zanahorias ofrecen energía, fibra y vitaminas como la A, B6 y C.</p>
+                <p>Las almendras y verduras añaden minerales como el potasio, fósforo y hierro, haciendo de esta receta una opción equilibrada y reconfortante.</p>
+            </div>
+        </div>
+
+        <div class="pasos">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Medio pollo troceado</li>
+                <li>Pan (una rebanada)</li>
+                <li>Almendras</li>
+                <li>1 tomate</li>
+                <li>1 pimiento</li>
+                <li>1 cebolla</li>
+                <li>1 ó 2 dientes de ajo</li>
+                <li>Patatas (1 kilo aprox.)</li>
+                <li>Zanahorias 2 ó 3</li>
+                <li>Laurel</li>
+                <li>Pimiento molido (para el sofrito), una cucharadita</li>
+                <li>Azafrán</li>
+                <li>Pimienta molida (o 4 ó 5 pimientas en grano para el mortero, opcional)</li>
+                <li>Sal</li>
+                <li>Aceite</li>
+                <li>Vino 200 ml</li>
+                <li>agua (1,8 l. aprox.)</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ol>
+                <li>En una sartén con un poco de aceite, freir las almendras, el ajo y el pan.</li>
+                <li>Una vez el pan esté frito, lo dejamos en un recipiente con agua hasta que se ablande.</li>
+                    <ul>
+                        <li>Luego, si hemos optado por las pimientas en grano, las machacamos en el mortero junto a las las almendras, el ajo y el pan remojado.<br>
+                            O trituramos todo en la batidora en vez del mortero.
+                        </li>
+                        <li>Se reserva esta mezcla para añadirlo al final, un poco antes de apartarlo del fuego.</li>
+                    </ul>
+                <li>Mientras tanto, en la cacerola morear un poco la carne, retirar y la dejamos reservada en otro recipiente.</li>
+                <li>En la misma cacerola, hacer el sofrito (tomate, pimiento, cebolla, ajo).</li>
+                <li>Añadir el pimentón molido un poco antes de apartar el sofrito, a fuego más suave. Si tiene mucho aceite, se le quita un poco. Se tritura el sofrito por la batidora y se vuelve a añadir a la cacerola.</li>
+                <li>Añadir la carne al sofrito ya triturado y hervir un poco. Añadir el vino y dejar evaporar unos minutos, después añadir el agua y el laurel. Dejamos hirviendo a fuego medio hasta que el pollo esté casi hecho.</li>
+                <li>Cuando el pollo ya casi está se le echan las patatas (chascadas), el azafrán y la pimienta si es molida.</li>
+                <li>Por último, cuando las patatas estén tiernas se le añade la mezcla de almendras que tenemos reservada.</li>
+                <li>Se deja cocer un poco a fuego suave, solo unos minutos hasta que la salsa esté a nuestro gusto, esta mezcla se vuelve espesa muy rápido y se puede quemar. Retirar</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <a href=""></a>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../js/myScript.js"></script>
+</body>
+</html>
