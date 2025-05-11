@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentejas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/misRecetas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header id="header"></header>
+    <script>
+        // Incluimos el header dinámicamente
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error al cargar el header: ", error))
+    </script>
+
+    <a name="pasos"></a>
+ 
+    <!-- Contenedor principal -->
+    <main class="contenedor">
+        <div class="pasos">
+            <div>
+                <h2>Lentejas</h2>
+                <img src="../images/lentejas.png" alt="Lentejas" width="65%">
+                <h3>Descripción</h3>
+                <p>Las lentejas son una legumbre nutritiva, versátil y reconfortante, perfectas para disfrutar en cualquier época del año. 
+                    Ricas en proteínas, fibra y minerales, son ideales tanto para platos tradicionales como para preparaciones más creativas.
+                </p>
+            </div>
+        </div>
+
+        <div class="pasos">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Lentejas (en remojo de la noche anterior) unos 300gr</li>
+                <li>1 cabeza de ajo asada</li>
+                <li>1 tomate</li>
+                <li>1 pimiento</li>
+                <li>½ cebolla</li>
+                <li>2 ó 3 patatas partidas en cascos</li>
+                <li>chorizo</li>
+                <li>morcilla</li>
+                <li>costilla</li>
+                <li>1 cucharadita de pimentón</li>
+                <li>2 hojas de laurel</li>
+                <li>clavos (unos 6-8)</li>
+                <li>pimientas (unos 8-10 granos)</li>
+                <li>sal</li>
+                <li>1 cucharón de aceite</li>
+                <li>agua (1.6 litros aprox.)</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ol>
+                <li>Se añaden todos los ingredientes con el agua fría en la olla.</li>
+                <ul>
+                    <li>En la olla express una vez que hierva se deja unos 12 minutos.</li>
+                    <li>En la olla convencional se deja cocer una hora aprox.</li>
+                </ul>
+                <li>Una vez pasado el tiempo de cocción, se tritura el tomate, la cebolla, el pimiento y la pulpa de los ajos. 
+                    Añadimos la mezcla triturada a la olla y mezclamos todo.</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <a href=""></a>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../js/myScript.js"></script>
+</body>
+</html>
