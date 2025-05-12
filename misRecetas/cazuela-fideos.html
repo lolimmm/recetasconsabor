@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cazuela de fideos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/misRecetas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header id="header"></header>
+    <script>
+        // Incluimos el header dinámicamente
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error al cargar el header: ", error))
+    </script>
+
+    <a name="pasos"></a>
+ 
+    <!-- Contenedor principal -->
+    <main class="contenedor">
+        <div class="pasos">
+            <div>
+                <h2>Cazuela de fideos</h2>
+                <img src="../images/defecto.png" alt="sopa caldo por encima" width="65%">
+                <h3>Descripción</h3>
+                <p>La cazuela de fideos es uno de los tipos de cazuela de la cocina tradicional malagueña.</p>
+                <p>Desde el punto de vista nutricional, es un plato equilibrado:</p>
+                <ul>
+                    <li>Fideos: aportan carbohidratos complejos, fuente de energía.</li>
+                    <li>Mariscos y pescado: ricos en proteínas de alta calidad, bajos en grasa, aportan yodo, hierro, fósforo, omega-3 y vitaminas del grupo B (especialmente B12 y niacina).</li>
+                    <li>Verduras (pimiento, tomate, cebolla, alcachofa): proporcionan fibra, vitamina C, ácido fólico, potasio y antioxidantes.</li>
+                    <li>Aceite de oliva y ajo: grasas saludables con propiedades antiinflamatorias y cardioprotectoras.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pasos">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Gamba blanca</li>
+                <li>¼ de almejas</li>
+                <li>Boquerones limpios sin espinas (opcional) ¼ aprox.</li>
+                <li>alcachofas (opcional)</li>
+                <li>1 tomate</li>
+                <li>2 pimientos</li>
+                <li>Media cebolla mediana</li>
+                <li>Azafrán</li>
+                <li>1 cucharadita de pimiento molido</li>
+                <li>Laurel</li>
+                <li>3 patatas medianas</li>
+                <li>Unos 250 gr.Fideos medianos</li>
+                <li>Aceite, unos 50ml (Los fideos necesitan menos aceite que el arroz)</li>
+                <li>Sal</li>
+                <li>Unos 2 l. de agua</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ul>
+                <li>Dejamos las almejas, unos 20 minutos en un recipiente con agua y sal para que suelten la arena.</li>
+                <li>En una cacerola ponemos a hervir el agua y las cabezas de las gambas.</li>
+            </ul>
+            <ol>
+                <li>Añadimos un poco de aceite a la cacerola y hacemos el sofrito (tomate, pimiento, cebolla).</li>
+                <li>Después, un poco antes de apartarlo y a fuego más bajo, se le añade el pimiento molido, dejamos sofriendo sobre 1 minuto. </li>
+                <li>Trituramos el sofrito y vertemos nuevamente a la cacerola.</li>
+                <li>
+                    Enjuagamos las almejas (que ya habrán soltado la arena) y las moreamos un poco, junto con el sofrito ya triturado, hasta que se abran, 
+                    añadir las alcachofas y el laurel. Mantener unos minutos hirviendo.
+                </li>
+                <li>Colar el agua de las gambas y añadir a la cacerola junto al sofrito y las almejas y ponemos a hervir.</li>
+                <li>
+                    Cuando esté hirviendo todo añadir las patatas troceadas (chascadas) y el azafrán. En unos 5
+                    ó 10 minutos añadir los fideos y mantener unos 12 minutos más o el tiempo que indique el fabricante.
+                </li>
+                <li>Unos 5 minutos antes de apagar el fuego echar las gambas peladas y los boquerones.</li>
+            </ol>
+        </div>
+
+        <div class="pasos">
+            <h3>Pasos (Thermomix)</h3>
+            <ul>
+                <li>Dejamos las almejas, unos 20 minutos en un recipiente con agua y sal para que suelten la arena.</li>
+            </ul>
+            <ol>
+                <li>Añadimos en thermomix la verdura (tomate, pimientos, cebolla) para hacer el frito, 7-10 minutos, varoma, velocidad 2.</li>
+                <li>Agregar el pimiento molido 1 minuto, 90°, velocidad 2.</li>
+                <li>Cuando haya bajado la temperatura triturar 1:30 minuto, velocidad progresiva 5-10.</li>
+                <li>Agregamos este frito a una cacerola junto a las almejas enjuagadas. Las moreamos un poco
+                    con el frito hasta que se abran, añadir las alcachofas y el laurel. Mantener unos minutos hirviendo.</li>
+                <li>Mientras tanto en thermomix hemos añadido el agua y las cabezas de las gambas, unos 12
+                    minutos, varoma, velocidad 2. O lo ponemos a hervir en una olla.</li>
+                <li>A continuación colamos el agua y la echamos a la cacerola junto al frito y las almejas y
+                    ponemos a hervir.</li>
+                <li>Cuando esté hirviendo todo añadir las patatas cortadas en cachos y el azafrán. En unos 5
+                    ó 10 minutos añadir los fideos y mantener unos 12 minutos más o el tiempo que indique el fabricante.</li>
+                <li>Unos 5 minutos antes de apagar el fuego echar las gambas peladas y los boquerones.</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <a href=""></a>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../js/myScript.js"></script>
+</body>
+</html>

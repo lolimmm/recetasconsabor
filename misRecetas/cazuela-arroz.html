@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cazuela de arroz</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/misRecetas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header id="header"></header>
+    <script>
+        // Incluimos el header dinámicamente
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error al cargar el header: ", error))
+    </script>
+
+    <a name="pasos"></a>
+ 
+    <!-- Contenedor principal -->
+    <main class="contenedor">
+        <div class="pasos">
+            <div>
+                <h2>Cazuela de arroz</h2>
+                <img src="../images/defecto.png" alt="sopa caldo por encima" width="65%">
+                <h3>Descripción</h3>
+                <p>La cazuela de arroz es un plato típico de la costa mediterránea española, especialmente en la Comunidad Valenciana y Murcia.</p>
+                <p>Es un plato completo, sabroso y lleno de nutrientes, ideal como comida principal.</p>
+                <p>
+                    Desde el punto de vista nutricional, es un plato equilibrado: el arroz aporta carbohidratos complejos para la energía, las gambas y almejas suministran proteínas de alta calidad, yodo, hierro, zinc y vitamina B12; las verduras (tomate, pimientos, alcachofas) suman fibra, antioxidantes, vitamina C, ácido fólico y potasio. 
+                    El aceite de oliva y el ajo ofrecen grasas saludables y propiedades antiinflamatorias.
+                </p>
+            </div>
+        </div>
+
+        <div class="pasos">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Gamba blanca</li>
+                <li>¼ de almejas</li>
+                <li>alcachofas (opcional)</li>
+                <li>1 tomate</li>
+                <li>2 pimientos</li>
+                <li>3 dientes de ajo</li>
+                <li>Azafrán</li>
+                <li>1 cucharadita de pimiento molido</li>
+                <li>Laurel</li>
+                <li>3 patatas medianas</li>
+                <li>Unos 200 gr. de arroz</li>
+                <li>Aceite</li>
+                <li>Sal</li>
+                <li>Unos 2 l. de agua</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ul>
+                <li>Dejamos las almejas, unos 20 minutos en un recipiente con agua y sal para que suelten la arena.</li>
+                <li>En una cacerola ponemos a hervir el agua y las cabezas de las gambas.</li>
+            </ul>
+            <ol>
+                <li>Añadimos un poco de aceite a la cacerola y hacemos el sofrito (tomate, pimiento, ajo).</li>
+                <li>Después, un poco antes de apartarlo y a fuego más bajo, se le añade el pimiento molido, dejamos sofriendo sobre 1 minuto. </li>
+                <li>Trituramos el sofrito y vertemos nuevamente a la cacerola.</li>
+
+                <li>
+                    Enjuagamos las almejas (que ya habrán soltado la arena) y las moreamos un poco junto con el sofrito ya triturado, añadir las
+                    alcachofas y el laurel. Mantener unos minutos hirviendo.
+                </li>
+                <li>Colar el agua de las gambas y añadir a la cacerola junto al sofrito y las almejas y ponemos a hervir.</li>
+                <li>
+                    Cuando esté hirviendo todo añadir las patatas troceadas (chascadas)  y el azafrán. Añadir el
+                    arroz y mantener entre 15 – 20 minutos (lo que indique en el paquete el fabricante).
+                </li>
+                <li>Unos 5 minutos antes de apagar el fuego echar las gambas peladas.</li>
+            </ol>
+            <p>Si faltara agua se le echa caliente.</p>
+            <p>
+                La cazuela de arroz es todo igual que la cazuela de fideos, sólo que al sofrito no se le echa cebolla,
+                se le pone ajo. Y se puede hacer sin patatas.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href=""></a>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../js/myScript.js"></script>
+</body>
+</html>
