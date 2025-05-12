@@ -274,6 +274,19 @@ footer {
 /*-------------------------------------*/
 /*----Contenido Principal del index----*/
 /*-------------------------------------*/
+
+main .recetas ul {
+    padding-left: 40px;
+}
+
+main .recetas ul li{
+    margin-bottom: 10px;
+}
+
+main {
+    line-height: 1.4;
+}
+
 .enlaces{
     padding: 1rem;
     
