@@ -56,7 +56,8 @@
 
   .nav-menu.show {
     transform: translateX(0%);
-    margin-right: 45px;
+    /* margin-right: 45px; */
+    right: 0px;
   }
 
   .nav-menu ul {
