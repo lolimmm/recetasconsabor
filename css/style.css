@@ -123,6 +123,9 @@ nav {
     margin: auto;
  
     display: flex;
+
+    max-height: 200px;
+    overflow-y: auto;
  }
 
  .menu ul li{
@@ -248,7 +251,7 @@ main {
     align-content: center;
 }
 
-h2, h3 {
+h2, h3, h4 {
     margin-top: 0.5rem;
     padding: 1rem;
 }
@@ -275,13 +278,13 @@ footer {
 /*----Contenido Principal del index----*/
 /*-------------------------------------*/
 
-main .recetas ul {
+/*main .recetas ul {
     padding-left: 40px;
 }
 
 main .recetas ul li{
     margin-bottom: 10px;
-}
+}*/
 
 main {
     line-height: 1.4;
