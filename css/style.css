@@ -97,7 +97,7 @@ h1, .contenedor h2 {
 }
 
 /*Menú Navegación, se accede a las diferentes zonas de contenido*/
-nav {
+div .menu {
     width: max-content;
     padding: 0.5rem;
     /*align-self: center;*/
@@ -108,6 +108,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    position: relative;
 }
 
 .menu ul {
@@ -117,7 +118,7 @@ nav {
     list-style-type: none;
     
     /*Establecemos el ancho de la barra de navegación*/
-    width: max-content;
+    /* width: max-content; */
 
     /*Centramos el elemento ul*/
     margin: auto;
@@ -169,7 +170,7 @@ nav {
     z-index: 1; /* Cuando la ventana se hace más pequeña se sobrepone el submenú al buscador*/
 }
 .menu li ul li{
-    width: 10em; /*Todos los elementos del submenú tienen el mismo tamaño*/
+    /*width: 10em;*/ /*Todos los elementos del submenú tienen el mismo tamaño*/
     float: none; /*Alineamos en vertical haciendo que ya no floten*/
     border-top: #CCCCCC solid thin;
 }
@@ -336,8 +337,11 @@ main .recetas img:hover {
     .menu-logo {
         justify-content: center;
     }
-    nav {
-        flex-direction: column;
+    div .menu {
+        /* flex-direction: column; */
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .menu ul {

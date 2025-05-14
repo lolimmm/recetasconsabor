@@ -6,6 +6,7 @@
     <title>Cazuela de fideos</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/misRecetas.css">
+    <link rel="stylesheet" href="../css/hamburger.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
@@ -20,6 +21,11 @@
                 document.getElementById("header").innerHTML = data;
             })
             .catch(error => console.error("Error al cargar el header: ", error))
+
+            // Esperar a que agrege el contenido y luego inicializar el menú
+                setTimeout(() => {
+                    inicializarMenuHamburger();
+                }, 100); // Pequeño retraso para asegurar que el DOM se haya actualizado
     </script>
 
     <a name="pasos"></a>

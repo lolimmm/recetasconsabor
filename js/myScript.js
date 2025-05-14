@@ -25,3 +25,28 @@ function getVal() {
 
     window.open(seleccion, "_self"); // Abrimos una página nueva con la URL indicada en 'seleccion'
 }
+
+
+/*document.addEventListener('DOMContentLoaded', () => {
+    
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('show');
+    });
+});*/
+
+
+/* MENÚ RESPONSIVE lo incluimos en una función para inicializar después de que se cargue el contenido */
+function inicializarMenuHamburger() {
+    
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('show');
+    });
+}
