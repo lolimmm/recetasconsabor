@@ -341,11 +341,14 @@ main .recetas img:hover {
         /* flex-direction: column; */
         flex-direction: row-reverse;
         justify-content: space-between;
-        width: 100%;
+        /* flex-wrap: wrap; */
+        width: 100%; 
+        
     }
 
     .menu ul {
         margin-bottom: 5px;
+        
     }
     /*
     .search-input {
