@@ -50,3 +50,46 @@ function inicializarMenuHamburger() {
         navMenu.classList.toggle('show');
     });
 }
+
+/* Carrusel imágenes */
+let sliderInner = document.querySelector(".slider--inner");
+let images = sliderInner.querySelectorAll("img");
+let index = 0;
+let autoplay;
+
+//sliderInner.style.transform = "translateX(-100%)";
+
+function startAutoplay() {
+    autoplay = setInterval(() => {
+        index++;
+        if (index >= images.length) index = 0;
+        updateSlider();
+    }, 1000);
+
+    // Detener después de 10 segundos
+    setTimeout(() => {
+        sliderInner.style.transform = "translateX(0%)"; // Cuando termine vuelve a la primera imagen
+        clearInterval(autoplay);
+    }, 10000);
+}
+
+function updateSlider() {
+    let percentage = index * -100;
+    sliderInner.style.transform = `translateX(${percentage}%)`;
+}
+
+// Botones 
+document.getElementById("next").addEventListener("click", () => {
+    index++;
+    if (index >= images.length) index = 0;
+    updateSlider();
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+    index--;
+    if (index < 0) index = images.length - 1;
+    updateSlider();
+});
+
+// Iniciar automáticamente al cargar la página
+startAutoplay();
