@@ -27,8 +27,13 @@ main {
     display: block;
     margin: 1rem auto;
     /*padding: 1rem;*/
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
+    transition: all 0.3s ease-in;
+}
+
+.pasos img:hover {
+    transform: scale(1.2);
 }
 
 
@@ -44,8 +49,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+
     transition: all 0.3s ease-in;
     /* align-items: center; */
+
 }
 
 /* .slider--inner img {
