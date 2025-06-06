@@ -55,10 +55,12 @@ main {
 
 }
 
-/* .slider--inner img {
-            aspect-ratio: 16 / 9;
+/* Aplicamos un ratio centramos desde el centro. Por si la imagenes no fuesen 1/1 */
+.slider--inner img {
+            /* aspect-ratio: 16 / 9; */
+            aspect-ratio: 1 / 1; 
             object-fit: cover;
-        } */
+        } 
 
 .slider--inner img {
     width: 100%;

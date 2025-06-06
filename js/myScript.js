@@ -69,6 +69,7 @@ function startAutoplay() {
     // Detener después de 10 segundos
     setTimeout(() => {
         sliderInner.style.transform = "translateX(0%)"; // Cuando termine vuelve a la primera imagen
+        index = 0; 
         clearInterval(autoplay);
     }, 10000);
 }
