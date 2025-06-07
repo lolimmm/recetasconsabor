@@ -333,6 +333,7 @@ main .recetas img:hover {
 /*----Media Queries----*/
 /*---------------------*/
 
+/* Pantallas pequeñas hasta 768px */
 @media only screen and (max-width: 768px) {
     .menu-logo {
         justify-content: center;
@@ -349,6 +350,10 @@ main .recetas img:hover {
     .menu ul {
         margin-bottom: 5px;
         
+    }
+
+    .search-input {
+        width: 120px;
     }
     /*
     .search-input {
