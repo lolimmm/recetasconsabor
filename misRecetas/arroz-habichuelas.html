@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroz con habichuelas</title>
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="stylesheet" href="../css/misRecetas.css?v=2">
+    <link rel="stylesheet" href="../css/hamburger.css?v=2">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header id="header"></header>
+    <script>
+        // Incluimos el header dinámicamente
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error al cargar el header: ", error))
+
+            // Esperar a que agrege el contenido y luego inicializar el menú
+                setTimeout(() => {
+                    inicializarMenuHamburger();
+                }, 100); // Pequeño retraso para asegurar que el DOM se haya actualizado
+    </script>
+
+    <a name="pasos"></a>
+ 
+    <!-- Contenedor principal -->
+    <main class="contenedor">
+        <div class="pasos">
+            <div>
+                <h2>Arroz con habichuelas</h2>
+
+                <!-- Carrusel imágenes -->
+                <div class="slider">
+                    <div class="slider--inner">
+                        <img src="../images/arroz-habichuelas/arroz-habichuelas8.png" alt="Arroz con habichuelas">
+                        <img src="../images/arroz-habichuelas/arroz-habichuelas1.jpg" alt="Arroz con habichuelas">
+                        <img src="../images/arroz-habichuelas/arroz-habichuelas2.jpg" alt="Arroz con habichuelas">
+                        <img src="../images/arroz-habichuelas/arroz-habichuelas3.png" alt="Arroz con habichuelas">
+                        <img src="../images/arroz-habichuelas/arroz-habichuelas4.jpg" alt="Arroz con habichuelas">
+                        <img src="../images/arroz-habichuelas/arroz-habichuelas5.jpg" alt="Arroz con habichuelas">
+                        <img src="../images/arroz-habichuelas/arroz-habichuelas6.jpg" alt="Arroz con habichuelas">
+                        <img src="../images/arroz-habichuelas/arroz-habichuelas7.png" alt="Arroz con habichuelas">
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="prev">←</button>
+                    <button id="next">→</button>
+                </div>
+
+                <h3>Descripción</h3>
+                <p>
+                    El arroz con habichuelas es un plato tradicional, sabroso y reconfortante. Combina alubias blancas con arroz, verduras y un toque de chorizo y panceta para aportar cuerpo y sabor. Es un guiso casero y completo, ideal para los días frescos y para disfrutar en familia.<br>
+                </p>
+                <h4>🍽️ Información nutricional aproximada (por ración):</h4>
+                <ul>
+                    <li><strong>Calorías:</strong> 500-600 kcal</li>
+                    <li><strong>proteínas:</strong> 20-25 g</li>
+                    <li><strong>Grasas:</strong> 25-30 g</li>
+                    <li><strong>carbohidratos:</strong> 45-55 g</li>
+                    <li><strong>Fibra:</strong> 10-12 g</li>
+                </ul>
+                <h4>🥦 Aporte nutricional:</h4>
+                <ul>
+                    <li><strong>Alubias:</strong> ricas en proteínas vegetales, fibra, hierro y ácido fólico.</li>
+                    <li><strong>Arroz:</strong> fuente de energía y carbohidratos complejos.</li>
+                    <li><strong>Verduras:</strong> aportan vitaminas A, C y antioxidantes.</li>
+                    <li><strong>Chorizo y panceta:</strong> añaden sabor, proteínas animales y grasas.</li>
+                    <li><strong>Aceite de oliva:</strong> saludable y con efecto antiinflamatorio.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pasos">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>1/2 kilo de habichuelas blancas (alubias) (en remojo de la noche anterior)</li>
+                <li>arroz (medio vaso)</li>
+                <li>1 cabeza de ajo asada</li>
+                <li>1 tomate</li>
+                <li>1 pimiento</li>
+                <li>½ cebolla</li>
+                <li>chorizo</li>
+                <li>panceta fresca</li>
+                <li>1 cucharadita de pimentón dulce</li>
+                <li>2 hojas de laurel</li>
+                <li>pimienta (unos 8-10 granos) o molida</li>
+                <li>sal</li>
+                <li>1 cucharón de aceite</li>
+                <li>agua</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ol>
+                <li>Se añaden todos los ingredientes con el agua fría en la olla.</li>
+                <ul>
+                    <li>En la olla express una vez que hierva se deja unos 20 minutos.</li>
+                    <li>En la olla convencional se deja cocer sobre una hora (hasta que las alubias estén cocidas)</li>
+                </ul>
+                <li>Una vez pasado el tiempo de cocción, se tritura el tomate, la cebolla, el pimiento y la pulpa de los ajos.</li>
+                <li>Añadimos la mezcla triturada a la olla y mezclamos todo.</li>
+                <li>Por último, poner de nuevo la cacerola a hervir, fuego medio y agregamos el arroz. Cocer durante unos 15 minutos o lo que indique el fabricante.</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <a href=""></a>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../js/myScript.js"></script>
+</body>
+</html>
