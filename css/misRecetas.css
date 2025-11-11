@@ -25,10 +25,6 @@ main {
 
 .pasos img {
     display: block;
-    margin: 1rem auto;
-    /*padding: 1rem;*/
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 2rem;
     transition: all 0.3s ease-in;
 }
 
@@ -42,7 +38,6 @@ main {
     overflow: hidden;
     width: 65%; 
     margin: auto;
-    /* position: relative; */
 }
 
 .slider--inner {
@@ -51,25 +46,28 @@ main {
     flex-wrap: nowrap;
 
     transition: all 0.3s ease-in;
-    /* align-items: center; */
 
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 /* Aplicamos un ratio centramos desde el centro. Por si la imagenes no fuesen 1/1 */
 .slider--inner img {
-            /* aspect-ratio: 16 / 9; */
-            aspect-ratio: 1 / 1; 
-            object-fit: cover;
-        } 
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
 
-.slider--inner img {
     width: 100%;
     min-width: 100%; 
-}
+    transition: all 0.5s ease-in-out;
 
-.controls {
-    /* position: absolute; */
-    /* top: 50%; */
+    scroll-snap-align: center;
+} 
+
+
+/* .controls {
     width: 100%;
 
     display: flex;
@@ -82,7 +80,6 @@ main {
     color: white;
     border: none;
     padding: 2% 5%;
-    /* font-size: 18px; */
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
@@ -97,4 +94,4 @@ main {
 .controls button:active {
     background-color: #261d0b;
     transform: scale(0.95);
-}
+} */

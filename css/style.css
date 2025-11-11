@@ -16,8 +16,6 @@ body {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
-
-    /*font-size: 1.5em;*/
 }
 
 header #banner {
@@ -30,10 +28,8 @@ header #banner {
     background-color: #ece0c6;
     border-radius: 2rem;
 
-    display: flex; /*Se utiliza FLEX para posicionar el contenido del header*/
-    justify-content: space-around; /*Distribuye el espacio entre los elementos horizontalmente*/
-    /*align-items: center;*/ /*Alinea verticalmente*/
-    /*text-align: center;*/
+    display: flex; 
+    justify-content: space-around; 
 }
 
 /* Imagen de la cabecera */
@@ -41,8 +37,6 @@ header #banner img {
     width: 100%;   
     
     box-shadow: 0.1em 0.2em 1em 0.2em black;
-    /*display: block;
-    margin: auto;*/
     
     opacity: 0.7;
     border-radius: 2rem;
@@ -53,8 +47,6 @@ header #banner img {
 }
 
 header #banner img:hover {
-    /* Difuminamos la imagen */
-    /*filter: blur(0px) brightness(100%) contrast(100%);*/
     filter: blur(3px) brightness(90%) contrast(76%);
     opacity: 1;
 }
@@ -70,7 +62,6 @@ header #banner img:hover {
 
     display: flex;
     flex-direction: row;
-    /*justify-content: space-around;*/
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -100,7 +91,6 @@ h1, .contenedor h2 {
 div .menu {
     width: max-content;
     padding: 0.5rem;
-    /*align-self: center;*/
     
     display: flex;
     flex-direction: row;
@@ -112,17 +102,11 @@ div .menu {
 }
 
 .menu ul {
-    /*Igualamos a cero tanto el margen como el padding y eliminamos los marcadores predeterminados*/ 
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    
-    /*Establecemos el ancho de la barra de navegación*/
-    /* width: max-content; */
 
-    /*Centramos el elemento ul*/
     margin: auto;
- 
     display: flex;
 
     max-height: 200px;
@@ -130,10 +114,6 @@ div .menu {
  }
 
  .menu ul li{
-    /*Para que la lista se muestre en horizontal hacemos que los elementos de la lista floten a la izquierda*/
-    /*float: left; */ /* Opto mejor por aplicar display:flex en la caja del ul */ 
-    
-     /*Establecemos el color de fondo*/ 
     background-color: #f2ead9;
     color: #7F786A;
 }
@@ -146,37 +126,34 @@ div .menu {
 }
 
 .menu ul a{
-    /*Hacemos que los elementos ancla de la lista se comporten como botones*/
     display: block;
-    padding: 0.4rem 0.5rem; /*Relleno a la derecha e izquierda de las anclas*/
-    line-height: 2.1em; /*Centrar verticalmente el texto*/
-    text-decoration: none; /*Desactivar el subrayado*/
+    padding: 0.4rem 0.5rem; 
+    line-height: 2.1em; 
+    text-decoration: none; 
     color: #392d13;
     font-weight: bold;
-    border-left: #CCCCCC solid thin; /*Añadimos un espacio entre los enlaces de la barra de navegación*/
+    border-left: #CCCCCC solid thin; 
 }
 
 /*---------------*/
 /*----Submenú----*/
 /*---------------*/
 .menu li ul {
-    display: none; /*Ocultamos el submenú*/
-    position: absolute; /*Para que el menú principal no se vea afectado*/
+    display: none; 
+    position: absolute; 
 }
 
-/*Al pasar sobre el botón del menú, aparece el submenú*/
 .menu li:hover ul{
     display: block;
-    z-index: 1; /* Cuando la ventana se hace más pequeña se sobrepone el submenú al buscador*/
+    z-index: 1; 
 }
 .menu li ul li{
-    /*width: 10em;*/ /*Todos los elementos del submenú tienen el mismo tamaño*/
-    float: none; /*Alineamos en vertical haciendo que ya no floten*/
+    float: none; 
     border-top: #CCCCCC solid thin;
 }
 
 .menu li ul a {
-    padding-bottom: 0.5rem; /* Reducimos el padding */
+    padding-bottom: 0.5rem; 
     padding-top: 0.5rem;
 }
 
@@ -226,11 +203,7 @@ main {
     margin-top: 0.5rem;
     padding: 0.5rem;
 
-    /*background-color: #f2ead9;
-    border-radius: 2rem;
-    border: solid thin #7F786A;*/
-
-    display: flex; /*Se utiliza FLEX para posicionar el contenido del header*/
+    display: flex; 
     flex-direction: column;
     align-content: center;
 }
@@ -242,7 +215,6 @@ main {
     margin-bottom: 1rem;
     padding: 1.5rem;
 
-    /*background-color: #f9f5ec;*/
     border-radius: 2rem;
     background-color: #f2ead9;
     border: solid thin #7F786A;
@@ -279,14 +251,6 @@ footer {
 /*----Contenido Principal del index----*/
 /*-------------------------------------*/
 
-/*main .recetas ul {
-    padding-left: 40px;
-}
-
-main .recetas ul li{
-    margin-bottom: 10px;
-}*/
-
 main {
     line-height: 1.4;
 }
@@ -303,22 +267,19 @@ main {
 .enlaces div {
     border: solid thin #7f786a;
     text-align: center;
-    /* padding-top: 0.5rem; */
     padding-bottom: 0.5rem;
    
     margin: 0.5rem;
     width: 160px;
     box-shadow: 2px 2px 4px 4px rgba(127, 120, 106, 0.4);
-    word-wrap: break-word; /* Permite que las palabras largas se rompan si no caben */
-    overflow: hidden; /* Oculta la parte de la imagen que se sale del contenedor */
+    word-wrap: break-word; 
+    overflow: hidden; 
 }
 .enlaces div p {
     margin-top: 10px;
 }
 
 main .recetas img {
-    /*box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);*/
-    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); Sombra */
     width: 160px;
     height: auto;
     transition: transform 0.3s ease;
@@ -339,10 +300,8 @@ main .recetas img:hover {
         justify-content: center;
     }
     div .menu {
-        /* flex-direction: column; */
         flex-direction: row-reverse;
         justify-content: space-between;
-        /* flex-wrap: wrap; */
         width: 100%; 
         
     }
@@ -355,13 +314,6 @@ main .recetas img:hover {
     .search-input {
         width: 120px;
     }
-    /*
-    .search-input {
-        margin-left: 25px;
-    }
-    .search-icon {
-        left: 40px;
-    }*/
 
 }
 
