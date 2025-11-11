@@ -28,9 +28,9 @@ main {
     transition: all 0.3s ease-in;
 }
 
-.pasos img:hover {
+/* .pasos img:hover {
     transform: scale(1.2);
-}
+} */
 
 
 /* Carrusel imágenes */
