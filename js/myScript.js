@@ -29,6 +29,44 @@ function inicializarMenuHamburger() {
 }
 
 
+// CARRUSEL DE IMÁGENES
+const slider = document.querySelector(".slider--inner");
+const thumbs = document.querySelectorAll(".thumb");
+
+// Al hacer clic en una miniatura → mover slider--inner
+thumbs.forEach(t => {
+    t.addEventListener("click", () => {
+        const index = t.dataset.index;
+        slider.scrollTo({
+            left: slider.clientWidth * index,
+            behavior: "smooth"
+        });
+    });
+});
+
+// Actualizar miniatura activa según la posición del slider
+function updateActiveThumb() {
+    const index = Math.round(slider.scrollLeft / slider.clientWidth);
+
+    thumbs.forEach(t => t.classList.remove("active"));
+    if (thumbs[index]) {
+        thumbs[index].classList.add("active");
+    }
+}
+
+// Detectar scroll del slider (con pequeño debounce)
+slider.addEventListener("scroll", () => {
+    clearTimeout(slider._scrollTimer);
+    slider._scrollTimer = setTimeout(updateActiveThumb, 100);
+});
+
+// Marcar la primera miniatura al cargar
+updateActiveThumb();
+
+
+
+
+
 /* Carrusel imágenes */
 /*
 let sliderInner = document.querySelector(".slider--inner");

@@ -67,6 +67,42 @@ main {
 } 
 
 
+.thumbs-container {
+    display: flex;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 65%;
+    margin: auto;
+    margin-top: 15px;
+    overflow-x: auto;
+
+}
+
+.thumb {
+    /* width: 70px; */
+    width: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.thumbs-container .thumb:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.thumbs-container .thumb.active {
+    opacity: 1;
+    transform: scale(1.1);
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+
+
 /* .controls {
     width: 100%;
 
@@ -95,3 +131,10 @@ main {
     background-color: #261d0b;
     transform: scale(0.95);
 } */
+
+
+@media (max-width: 768px) {
+    .thumb {
+        width: 50px;
+    }
+}
