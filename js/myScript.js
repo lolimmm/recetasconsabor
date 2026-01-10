@@ -33,7 +33,7 @@ function inicializarMenuHamburger() {
 const slider = document.querySelector(".slider--inner");
 const thumbs = document.querySelectorAll(".thumb");
 
-// Al hacer clic en una miniatura → mover slider--inner
+// Al hacer clic en una miniatura -> mover slider--inner
 thumbs.forEach(t => {
     t.addEventListener("click", () => {
         const index = t.dataset.index;
