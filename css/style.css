@@ -25,7 +25,7 @@ header #banner {
     margin-bottom: 1rem;
     padding: 0.5rem;
 
-    background-color: #ece0c6;
+    /* background-color: #ece0c6; */
     border-radius: 2rem;
 
     display: flex; 
@@ -36,13 +36,14 @@ header #banner {
 header #banner img {
     width: 100%;   
     
-    box-shadow: 0.1em 0.2em 1em 0.2em black;
+    /* box-shadow: 0.1em 0.2em 1em 0.2em black; */
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.5);
     
     opacity: 0.7;
     border-radius: 2rem;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #392d13;
+    /* border-width: 2px; */
+    /* border-style: solid; */
+    /* border-color: #392d13; */
     
 }
 
